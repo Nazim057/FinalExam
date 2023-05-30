@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "title": "Addiction When Gambling Becomes A Problem",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia corru",
+      "photo": "./assets/img/f1.jpg",
+      "id": 1
+    },
+    {
+      "title": "Addiction When Gambling Becomes A Problem",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia corru",
+      "photo": "./assets/img/f1.jpg",
+      "id": 3
+    },
+    {
+      "title": "Addiction When Gambling Becomes A Problem",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia corru",
+      "photo": "./assets/img/f1.jpg",
+      "id": 4
+    },
+    {
+      "title": "Addiction When Gambling Becomes A Problem",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia corru",
+      "photo": "./assets/img/f1.jpg",
+      "id": 5
+    },
+    {
+      "title": "Addiction When Gambling Becomes A Problem",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia corru",
+      "photo": "./assets/img/f1.jpg",
+      "id": 6
+    },
+    {
+      "title": "Addiction When Gambling Becomes A Problem",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia corru",
+      "photo": "./assets/img/f1.jpg",
+      "id": 7
+    }
+  ],
+  "favdata": [
+    {
+      "title": "Addiction When Gambling Becomes A Problem",
+      "description": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum mollitia corru",
+      "photo": "./assets/img/f1.jpg",
+      "id": 7
+    }
+  ]
+}

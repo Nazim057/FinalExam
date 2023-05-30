@@ -1,0 +1,44 @@
+footer {
+  padding: 2% 0;
+  background-color: black;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      margin: 0;
+      color: white;
+      a {
+        color: red;
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        li {
+          a {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .footer {
+      flex-direction: column;
+      nav {
+        margin-top: 20px;
+      }
+    }
+  }
+}

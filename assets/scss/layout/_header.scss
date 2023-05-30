@@ -1,0 +1,145 @@
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  .burger-modal {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    align-items: center;
+    // justify-content: center;
+    background-color: white;
+    top: 86px;
+    padding: 3% 0;
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          margin: 10px;
+          // padding: 20px 0;
+          .dropdown {
+            #dropdown-span {
+              padding: 0;
+              vertical-align: 0;
+              color: black !important;
+              font-size: 14px;
+              font-weight: 700;
+              &:hover {
+                color: dodgerblue !important;
+              }
+            }
+            .dropdown-menu {
+              display: none ;
+              flex-direction: column;
+            }
+            &:hover {
+              .dropdown-menu {
+                display: block;
+              }
+            }
+            ul {
+              li {
+                margin: 6px 15px;
+              }
+            }
+          }
+          a {
+            font-size: 14px;
+            color: black;
+            font-weight: 700;
+            &:hover {
+              color: dodgerblue;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 991px) {
+      display: none !important;
+    }
+  }
+
+  .header {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      nav {
+        ul {
+          display: flex;
+          justify-content: center;
+          // padding-top: 20px;
+          // align-items: center;
+          margin: 0;
+          padding: 0;
+          li {
+            margin: 15px;
+            // padding: 20px 0;
+            .dropdown {
+              #dropdown-span {
+                padding: 0;
+                vertical-align: 0;
+                color: black !important;
+                font-size: 14px;
+                font-weight: 700;
+                &:hover {
+                  color: dodgerblue !important;
+                }
+              }
+              .dropdown-menu {
+                display: none;
+                flex-direction: column;
+              }
+              &:hover {
+                .dropdown-menu {
+                  display: block;
+                }
+              }
+              ul {
+                li {
+                  margin: 6px 15px;
+                }
+              }
+            }
+            a {
+              font-size: 14px;
+              color: black;
+              font-weight: 700;
+              &:hover {
+                color: dodgerblue;
+              }
+            }
+          }
+        }
+      }
+      .header-icon-div {
+        margin: 7px 0;
+        display: none;
+        .menu-btn {
+          font-size: 25px;
+          padding: 10px 15px;
+          border: 1px solid grey;
+          border-radius: 7px;
+          &:hover {
+            border: 2px solid black;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .header {
+      .container {
+        nav {
+          display: none;
+        }
+        .header-icon-div {
+          display: block;
+        }
+      }
+    }
+  }
+}

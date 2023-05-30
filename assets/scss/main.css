@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+#header .burger-modal {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: none;
+  align-items: center;
+  background-color: white;
+  top: 86px;
+  padding: 3% 0;
+}
+#header .burger-modal nav ul {
+  display: flex;
+  flex-direction: column;
+}
+#header .burger-modal nav ul li {
+  margin: 10px;
+}
+#header .burger-modal nav ul li .dropdown #dropdown-span {
+  padding: 0;
+  vertical-align: 0;
+  color: black !important;
+  font-size: 14px;
+  font-weight: 700;
+}
+#header .burger-modal nav ul li .dropdown #dropdown-span:hover {
+  color: dodgerblue !important;
+}
+#header .burger-modal nav ul li .dropdown .dropdown-menu {
+  display: none;
+  flex-direction: column;
+}
+#header .burger-modal nav ul li .dropdown:hover .dropdown-menu {
+  display: block;
+}
+#header .burger-modal nav ul li .dropdown ul li {
+  margin: 6px 15px;
+}
+#header .burger-modal nav ul li a {
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+}
+#header .burger-modal nav ul li a:hover {
+  color: dodgerblue;
+}
+@media only screen and (min-width: 991px) {
+  #header .burger-modal {
+    display: none !important;
+  }
+}
+#header .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header .container nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#header .header .container nav ul li {
+  margin: 15px;
+}
+#header .header .container nav ul li .dropdown #dropdown-span {
+  padding: 0;
+  vertical-align: 0;
+  color: black !important;
+  font-size: 14px;
+  font-weight: 700;
+}
+#header .header .container nav ul li .dropdown #dropdown-span:hover {
+  color: dodgerblue !important;
+}
+#header .header .container nav ul li .dropdown .dropdown-menu {
+  display: none;
+  flex-direction: column;
+}
+#header .header .container nav ul li .dropdown:hover .dropdown-menu {
+  display: block;
+}
+#header .header .container nav ul li .dropdown ul li {
+  margin: 6px 15px;
+}
+#header .header .container nav ul li a {
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+}
+#header .header .container nav ul li a:hover {
+  color: dodgerblue;
+}
+#header .header .container .header-icon-div {
+  margin: 7px 0;
+  display: none;
+}
+#header .header .container .header-icon-div .menu-btn {
+  font-size: 25px;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+#header .header .container .header-icon-div .menu-btn:hover {
+  border: 2px solid black;
+}
+@media only screen and (max-width: 991px) {
+  #header .header .container nav {
+    display: none;
+  }
+  #header .header .container .header-icon-div {
+    display: block;
+  }
+}
+
+.home-section {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home-section .home-section-div {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: 90vh;
+}
+.home-section .home-section-div h1 {
+  padding-top: 20%;
+  font-size: 48px;
+  font-weight: 700;
+}
+.home-section .home-section-div .home-section-bottom {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-section .home-section-div .home-section-bottom .home-social {
+  display: flex;
+  gap: 30px;
+}
+.home-section .home-section-div .home-section-bottom .home-social p {
+  font-size: 14px;
+}
+.home-section .home-section-div .home-section-bottom .home-img-div {
+  display: flex;
+}
+.home-section .home-section-div .home-section-bottom .home-img-div .home-img-div-text {
+  text-align: end;
+}
+.home-section .home-section-div .home-section-bottom .home-img-div .home-img-div-text h4 {
+  font-size: 18px;
+}
+.home-section .home-section-div .home-section-bottom .home-img-div .home-img-div-text p {
+  font-size: 14px;
+}
+.home-section .home-section-div .home-section-bottom .home-img-div img {
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.categories-section {
+  padding: 6% 0;
+}
+.categories-section .categories-section-div .categories-section-text {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.categories-section .categories-section-div .categories-section-text p {
+  color: rgba(0, 0, 0, 0.427);
+}
+.categories-section .categories-section-div .row .categories-card-div .categories-card {
+  margin: 0 auto;
+  max-width: 350px;
+}
+.categories-section .categories-section-div .row .categories-card-div .categories-card .categories-img img {
+  width: 100%;
+  transition: 0.5s;
+}
+.categories-section .categories-section-div .row .categories-card-div .categories-card .categories-img img:hover {
+  transform: scale(1.1);
+}
+.categories-section .categories-section-div .row .categories-card-div .categories-card h5 {
+  margin-top: 15px;
+  background-color: black;
+  font-size: 14px;
+  color: rgba(199, 199, 199, 0.795);
+  padding: 5px 15px;
+  width: 110px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+}
+.categories-section .categories-section-div .row .categories-card-div .categories-card p {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.travel-section {
+  padding: 6% 0;
+  background-color: #f9f9ff;
+}
+.travel-section .travel-section-div .travel-section-text {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.travel-section .travel-section-div .travel-section-text p {
+  color: rgba(0, 0, 0, 0.427);
+}
+.travel-section .travel-section-div .row .travel-card-div {
+  padding: 0 25px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-img-div {
+  position: relative;
+  margin-right: 15px;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-img-div img {
+  transition: 0.5s;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-img-div img:hover {
+  transform: scale(1.1);
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-img-div .travel-section-img-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px 0 30px;
+  background-color: black;
+  position: absolute;
+  z-index: 20;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-img-div .travel-section-img-text h1 {
+  color: white;
+  font-size: 24px;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-img-div .travel-section-img-text p {
+  color: white;
+  font-size: 14px;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-text-div h1 {
+  font-size: 18px;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-text-div h1:hover {
+  color: #80b4fd;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-text-div p {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-text-div .travel-section-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.travel-section .travel-section-div .row .travel-card-div .travel-section-text-div .travel-section-icon p {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.travel-section .travel-section-div .button-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.travel-section .travel-section-div .button-div button {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  background-color: #80b4fd;
+  border: 1px solid #80b4fd;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.travel-section .travel-section-div .button-div button:hover {
+  color: #80b4fd;
+  background-color: white;
+}
+
+.fashion-section {
+  padding: 6% 0;
+}
+.fashion-section .fashion-section-div .fashion-section-text {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.fashion-section .fashion-section-div .fashion-section-text p {
+  color: rgba(0, 0, 0, 0.427);
+}
+.fashion-section .fashion-section-div .search-sort-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.fashion-section .fashion-section-div .search-sort-div .search-input {
+  max-width: 500px;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-img img {
+  width: 100%;
+  transition: 0.5s;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-img img:hover {
+  transform: scale(1.1);
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card h5 {
+  margin-top: 15px;
+  background-color: black;
+  font-size: 14px;
+  color: rgba(199, 199, 199, 0.795);
+  padding: 5px 15px;
+  width: 110px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card h4 {
+  font-size: 18px;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card h4:hover {
+  color: #80b4fd;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card p {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-icon-div {
+  display: flex;
+  justify-content: space-between;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-btn-div {
+  display: flex;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-btn-div .fashion-btn-top {
+  display: flex;
+  flex-direction: column;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-btn-div .fashion-btn-top a {
+  margin: 3px 12px 3px 0;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-btn-div .fashion-btn-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.fashion-section .fashion-section-div .row .fashion-card-div .fashion-card .fashion-btn-div .fashion-btn-bottom button {
+  margin: 3px 12px 3px 0;
+}
+
+.add-edit-form {
+  margin: 8% 0;
+}
+
+footer {
+  padding: 2% 0;
+  background-color: black;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer p {
+  margin: 0;
+  color: white;
+}
+footer .footer p a {
+  color: red;
+}
+footer .footer nav ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+footer .footer nav ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer nav ul li a i {
+  color: black;
+}
+@media only screen and (max-width: 992px) {
+  footer .footer {
+    flex-direction: column;
+  }
+  footer .footer nav {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

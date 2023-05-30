@@ -1,0 +1,269 @@
+// Home Section
+.home-section {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .home-section-div {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 90vh;
+    h1 {
+      padding-top: 20%;
+      font-size: 48px;
+      font-weight: 700;
+    }
+    .home-section-bottom {
+      margin-top: 15%;
+      display: flex;
+      justify-content: space-between;
+      .home-social {
+        display: flex;
+        gap: 30px;
+        p {
+          font-size: 14px;
+        }
+      }
+      .home-img-div {
+        display: flex;
+        .home-img-div-text {
+          text-align: end;
+          h4 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        img {
+          margin-left: 15px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+//////categories Section/////////////
+.categories-section {
+  padding: 6% 0;
+  .categories-section-div {
+    .categories-section-text {
+      text-align: center;
+      margin-bottom: 70px;
+      p {
+        color: rgba(0, 0, 0, 0.427);
+      }
+    }
+    .row {
+      .categories-card-div {
+        .categories-card {
+          margin: 0 auto;
+          max-width: 350px;
+          .categories-img {
+            img {
+              width: 100%;
+              transition: 0.5s;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+          h5 {
+            margin-top: 15px;
+            background-color: black;
+            font-size: 14px;
+            color: rgba(199, 199, 199, 0.795);
+            padding: 5px 15px;
+            width: 110px;
+            font-weight: 200;
+            font-family: "Montserrat", sans-serif;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+///////Travel section/////////////
+.travel-section {
+  padding: 6% 0;
+  background-color: #f9f9ff;
+  .travel-section-div {
+    .travel-section-text {
+      text-align: center;
+      margin-bottom: 70px;
+      p {
+        color: rgba(0, 0, 0, 0.427);
+      }
+    }
+    .row {
+      .travel-card-div {
+        padding: 0 25px;
+        display: flex;
+        margin-bottom: 50px;
+        .travel-section-img-div {
+          position: relative;
+          margin-right: 15px;
+          img {
+            // width: 100%;
+            transition: 0.5s;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+          .travel-section-img-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px 0 30px;
+            background-color: black;
+            position: absolute;
+            z-index: 20;
+            h1 {
+              color: white;
+              font-size: 24px;
+            }
+            p {
+              color: white;
+              font-size: 14px;
+            }
+          }
+        }
+        .travel-section-text-div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 20px;
+          h1 {
+            font-size: 18px;
+            &:hover {
+              color: #80b4fd;
+            }
+          }
+          p {
+            opacity: 0.6;
+            font-size: 14px;
+          }
+          .travel-section-icon {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-size: 14px;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+    .button-div {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      button {
+        // padding: 0 auto;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        background-color: #80b4fd;
+        border: 1px solid #80b4fd;
+        padding: 10px 20px;
+        border-radius: 30px;
+        &:hover {
+          color: #80b4fd;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+////////////Fashion Section ////////////
+.fashion-section {
+  padding: 6% 0;
+  .fashion-section-div {
+    .fashion-section-text {
+      text-align: center;
+      margin-bottom: 70px;
+      p {
+        color: rgba(0, 0, 0, 0.427);
+      }
+    }
+    .search-sort-div {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px 0;
+      .search-input {
+        max-width: 500px;
+      }
+    }
+    .row {
+      .fashion-card-div {
+        .fashion-card {
+          .fashion-img {
+            img {
+              width: 100%;
+              transition: 0.5s;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+          h5 {
+            margin-top: 15px;
+            background-color: black;
+            font-size: 14px;
+            color: rgba(199, 199, 199, 0.795);
+            padding: 5px 15px;
+            width: 110px;
+            font-weight: 200;
+            font-family: "Montserrat", sans-serif;
+          }
+          h4 {
+            font-size: 18px;
+            &:hover {
+              color: #80b4fd;
+            }
+          }
+          p {
+            font-size: 14px;
+            opacity: 0.5;
+          }
+          .fashion-icon-div {
+            display: flex;
+            justify-content: space-between;
+          }
+          .fashion-btn-div {
+            display: flex;
+            .fashion-btn-top {
+              display: flex;
+              flex-direction: column;
+              a {
+                margin: 3px 12px 3px 0;
+              }
+            }
+            .fashion-btn-bottom {
+              display: flex;
+              flex-direction: column;
+              button {
+                margin: 3px 12px 3px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+////////////////
+.add-edit-form {
+  margin: 8% 0;
+}
